@@ -12,6 +12,8 @@ def ppt_to_pdf(ppt_path, pdf_path): # font error
     presentation = Presentation()
     # 载入PowerPoint文件
     presentation.LoadFromFile(ppt_path)
+    # 设置默认字体
+    presentation.SetDefaultFont("Arial")
     # 将PowerPoint文件转换为PDF
     presentation.SaveToFile(pdf_path, pFileFormat.PDF)
     presentation.Dispose()
