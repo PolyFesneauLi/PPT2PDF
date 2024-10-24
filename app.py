@@ -6,7 +6,7 @@ from spire.presentation import FileFormat as pFileFormat
 from spire.pdf import PdfDocument
 
 import os
-def ppt_to_pdf(ppt_path, pdf_path):
+def ppt_to_pdf(ppt_path, pdf_path): # font error
     pdf = PdfDocument()
     # 创建Presentation对象
     presentation = Presentation()
